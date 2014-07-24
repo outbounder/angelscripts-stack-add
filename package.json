@@ -1,0 +1,20 @@
+{
+  "name": "angelscripts-stack-upgrade",
+  "version": "0.0.1",
+  "description": "Angel script to copy files from source directory to cwd with deep merging of json files",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "~0.10.0",
+    "glob-stream": "~3.1.14",
+    "merge-util": "~0.1.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "organic-angel": "0.2.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Boris Filipov",
+  "license": "MIT"
+}
