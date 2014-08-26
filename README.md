@@ -30,4 +30,4 @@ Angel script to copy files from source directory to cwd with deep merging of jso
 
 ## example
 
-* [organic-stem-skeleton](https://github.com/outbounder/organic-stem-skeleton) look at `/stack` folder
+* [organic-stem-skeleton](https://github.com/outbounder/organic-stem-skeleton) look at `/upgrades` folder

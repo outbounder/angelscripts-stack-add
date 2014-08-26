@@ -70,7 +70,7 @@ module.exports = function(angel){
         child.stderr.pipe(process.stderr)
       }
     }
-    glob.create(templatesRoot+"/**/*.*")
+    glob.create(templatesRoot+"/**/*.*", {dot: true})
       .on("data", deepMergeFile(templatesRoot, root, onFileStart, onFileDone))
       .on("error", console.error)
   })
