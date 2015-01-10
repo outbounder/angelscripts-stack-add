@@ -35,6 +35,29 @@ var deepMergeFile = function(templatesRoot, root, startHook, doneHook) {
           })
         })
       })
+    } else 
+    if(sourcePath.indexOf(".gitignore") > -1) {
+      fs.readFile(sourcePath, function(err, sourceData){
+        if(err) return console.error("failed to read: ", sourcePath)
+        fse.ensureFile(destPath, function(err){
+          if(err) return console.error("failed to ensure file", destPath, err)
+          fs.readFile(destPath, function(err, destData){
+            var sourceLines = sourceData.toString().split("\n")
+            var destLines = destData.toString().split("\n")
+            sourceLines.forEach(function(line){
+              if(destLines.indexOf(line) == -1)
+                destLines.push(line)
+            })
+            fs.writeFile(destPath, destLines.join("\n"), function(err){
+              if(err) 
+                console.error("failed to append: ", sourcePath, "->", destPath, err)
+              else
+                console.log("wrote: ", destPath)  
+              if(doneHook) doneHook(file)
+            })
+          })
+        })
+      })
     } else {
       fs.readFile(sourcePath, function(err, data){
         if(err) return console.error("failed to read: ", sourcePath)

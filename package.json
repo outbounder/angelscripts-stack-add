@@ -1,6 +1,6 @@
 {
   "name": "angelscripts-stack-upgrade",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Angel script to copy files from source directory to cwd with deep merging of json files",
   "main": "index.js",
   "dependencies": {
