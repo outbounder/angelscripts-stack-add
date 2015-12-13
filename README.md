@@ -8,8 +8,7 @@ Angel script to copy files from source directory to cwd with deep merging of jso
 
     $ npm install angelscripts-stack-upgrade
 
-
-2. create `scripts/stack/myStackChanges`
+2. create `stacks/myStackChanges`
 
     - package.json
     + dna
@@ -20,7 +19,7 @@ Angel script to copy files from source directory to cwd with deep merging of jso
 
 3. execute the script via `organic-angel`
 
-    $ angel stack add scripts/stack/myStackChanges
+    $ angel stack add stacks/myStackChanges
 
 ### What happens
 
