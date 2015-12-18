@@ -1,6 +1,6 @@
 {
-  "name": "angelscripts-stack-upgrade",
-  "version": "0.1.0",
+  "name": "angelscripts-stack-add",
+  "version": "0.1.1",
   "description": "Angel script to copy files from source directory to cwd with deep merging of json files",
   "main": "index.js",
   "dependencies": {
@@ -19,10 +19,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/outbounder/angelscripts-stack-upgrade.git"
+    "url": "https://github.com/outbounder/angelscripts-stack-add.git"
   },
   "bugs": {
-    "url": "https://github.com/outbounder/angelscripts-stack-upgrade/issues"
+    "url": "https://github.com/outbounder/angelscripts-stack-add/issues"
   },
-  "homepage": "https://github.com/outbounder/angelscripts-stack-upgrade"
+  "homepage": "https://github.com/outbounder/angelscripts-stack-add"
 }

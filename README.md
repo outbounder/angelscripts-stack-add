@@ -1,4 +1,4 @@
-# angelscripts-stack-upgrade
+# angelscripts-stack-add
 
 Angel script to copy files from source directory to cwd with deep merging of json files
 
@@ -6,7 +6,7 @@ Angel script to copy files from source directory to cwd with deep merging of jso
 
 1. install script to existing project
 
-    $ npm install angelscripts-stack-upgrade
+    $ npm install angelscripts-stack-add
 
 2. create `stacks/myStackChanges`
 
@@ -24,9 +24,10 @@ Angel script to copy files from source directory to cwd with deep merging of jso
 ### What happens
 
 * all json file contents are deep merged into current working directory. Files not already present in cwd will be created.
+* all .gitignore files will be merged and unique lines will be left
 * all other files are copied w/ override to current working directory
 * `npm install` is started once all copies are finished.
 
-## example
+## examples
 
 * [organic-stem-skeleton](https://github.com/outbounder/organic-stem-skeleton) look at `/upgrades` folder
